@@ -36,12 +36,12 @@ def main():
     algoritmo_ordenacao = { # Aqui você escolhe os algoritmos que deseja comparar
         # "Bubble Sort": BubbleSort.bubble_sort,
         # "Bubble Sort Melhorado": BubbleSortMelhorado.bubble_sort,
-        # "Quick Sort": QuickSort.quick_sort,
-        # "Quick Sort Melhorado": QuickSortMelhorado.quick_sort,
+        "Quick Sort": QuickSort.quick_sort,
+        "Quick Sort Melhorado": QuickSortMelhorado.quick_sort,
         # "Insertion Sort": InsertionSort.insertion_sort,
         # "Shell Sort": ShellSort.shell_sort,
         # "Selection Sort": SelectionSort.selection_sort,
-        # "Heap Sort": HeapSort.heap_sort,
+        "Heap Sort": HeapSort.heap_sort,
         "Merge Sort": MergeSort.merge_sort,
     }
 
@@ -54,7 +54,7 @@ def main():
             tempo_levado = mtime(algo_func, vet)
             tempo_exe[ord_name].append(tempo_levado)
 
-    plot_graph(vet_length, tempo_exe, "Comparação de Algoritmos de Ordenação - Vetor Aleatório")
+    plot_graph(vet_length, tempo_exe, "Comparação de Algoritmos de Ordenação (n log n)- Vetor Aleatório")
 
 if __name__ == "__main__":
     main()
