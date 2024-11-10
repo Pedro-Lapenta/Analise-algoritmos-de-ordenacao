@@ -29,18 +29,19 @@ def plot_graph(vet_length, tempo_exe, title):
         plt.plot(vet_length, filtro, label=ord_name, linewidth=3)
 
     plt.legend(loc='best')  # Posiciona a legenda automaticamente no melhor lugar
+    plt.savefig("desordenado.png")  # Salva o gráfico em uma imagem
     plt.show()  # Exibe o gráfico
 
 def main():
     algoritmo_ordenacao = { # Aqui você escolhe os algoritmos que deseja comparar
-        "Bubble Sort": BubbleSort.bubble_sort,
-        "Bubble Sort Melhorado": BubbleSortMelhorado.bubble_sort,
-        "Quick Sort": QuickSort.quick_sort,
-        "Quick Sort Melhorado": QuickSortMelhorado.quick_sort,
-        "Insertion Sort": InsertionSort.insertion_sort,
-        "Shell Sort": ShellSort.shell_sort,
-        "Selection Sort": SelectionSort.selection_sort,
-        "Heap Sort": HeapSort.heap_sort,
+        # "Bubble Sort": BubbleSort.bubble_sort,
+        # "Bubble Sort Melhorado": BubbleSortMelhorado.bubble_sort,
+        # "Quick Sort": QuickSort.quick_sort,
+        # "Quick Sort Melhorado": QuickSortMelhorado.quick_sort,
+        # "Insertion Sort": InsertionSort.insertion_sort,
+        # "Shell Sort": ShellSort.shell_sort,
+        # "Selection Sort": SelectionSort.selection_sort,
+        # "Heap Sort": HeapSort.heap_sort,
         "Merge Sort": MergeSort.merge_sort,
     }
 

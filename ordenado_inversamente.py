@@ -5,6 +5,8 @@ import time
 import matplotlib.pyplot as plt
 import sys
 
+
+
 sys.setrecursionlimit(10**5) #Não estoura o limite de recursão
 
 def inversely_ordered_vector(num):
@@ -28,18 +30,19 @@ def plot_graph(vet_length, tempo_exe, title):
         plt.plot(vet_length, filtro, label=ord_name, linewidth=3)
 
     plt.legend(loc='best') # Adiciona a legenda ao gráfico no melhor lugar que ele julga
+    plt.savefig("ordenado_inversamente.png") # Salva o gráfico em uma imagem
     plt.show()  # Exibe o gráfico interativamente
 
 def main():
     algoritmo_ordenacao = { #Aqui é onde você irá escolher os algoritmos que deseja ver o tempo de execução, basta adicionar ou remover da lista
-        "Bubble Sort": BubbleSort.bubble_sort,
-        "Bubble Sort Melhorado": BubbleSortMelhorado.bubble_sort,
-        "Quick Sort": QuickSort.quick_sort,
-        "Quick Sort Melhorado": QuickSortMelhorado.quick_sort,
-        "Insertion Sort": InsertionSort.insertion_sort,
-        "Shell Sort": ShellSort.shell_sort,
-        "Selection Sort": SelectionSort.selection_sort,
-        "Heap Sort": HeapSort.heap_sort,
+        # "Bubble Sort": BubbleSort.bubble_sort,
+        # "Bubble Sort Melhorado": BubbleSortMelhorado.bubble_sort,
+        # "Quick Sort": QuickSort.quick_sort,
+        # "Quick Sort Melhorado": QuickSortMelhorado.quick_sort,
+        # "Insertion Sort": InsertionSort.insertion_sort,
+        # "Shell Sort": ShellSort.shell_sort,
+        # "Selection Sort": SelectionSort.selection_sort,
+        # "Heap Sort": HeapSort.heap_sort,
         "Merge Sort": MergeSort.merge_sort,
     }
 
