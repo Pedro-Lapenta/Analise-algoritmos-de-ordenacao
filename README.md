@@ -1,1 +1,1 @@
-# Trabalho 1 da matéria de projeto e análise de algoritmos 
+# Trabalho de PAA - Tempo de execução de algoritmos de ordenação
